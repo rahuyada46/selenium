@@ -15,7 +15,7 @@ import pageclasses.SearchPage;
 public class TestNG_TestSuite {
 	private WebDriver driver;
 	private String baseUrl;
-	static Logger log = Logger.getLogger(TestNG_TestSuite.class);// latest committ
+	static Logger log = Logger.getLogger(TestNG_TestSuite.class);// latest commit
 
 	@BeforeClass
 	public void beforeClass() {
