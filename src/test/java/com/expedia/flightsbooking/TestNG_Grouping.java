@@ -10,13 +10,13 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 
 public class TestNG_Grouping {
-	ExtentReports reports;
-	ExtentTest test;
+	//ExtentReports reports;
+	//ExtentTest test;
 	
 	@BeforeClass //Test Build Trigger
 	public void beforeClass() {
-		ExtentReports report = new ExtentReports("C:\\Users\\rahul\\Desktop\\ExtentReport.html");
-		test = report.startTest("Verify Welcome Test");
+		//ExtentReports report = new ExtentReports("C:\\Users\\rahul\\Desktop\\ExtentReport.html");
+		//test = report.startTest("Verify Welcome Test");
 		System.out.println("This method runs before class");
 	}
 	@BeforeMethod(alwaysRun = true)

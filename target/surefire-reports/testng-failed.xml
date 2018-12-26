@@ -11,10 +11,9 @@
       </class> <!-- com.expedia.flightsbooking.TestNG_TestSuite -->
       <class name="com.expedia.flightsbooking.TestNG_Grouping">
         <methods>
-          <include name="AudiA6"/>
-          <include name="HondaAccord"/>
-          <include name="BMWX3"/>
-          <include name="BMW3Series"/>
+          <include name="beforeMethod"/>
+          <include name="afterMethod"/>
+          <include name="afterClass"/>
           <include name="beforeClass"/>
         </methods>
       </class> <!-- com.expedia.flightsbooking.TestNG_Grouping -->
