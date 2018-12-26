@@ -1,11 +1,22 @@
 package com.expedia.flightsbooking;
 
-import org.testng.annotations.*;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
 
 public class TestNG_Grouping {
+	ExtentReports reports;
+	ExtentTest test;
 	
-	@BeforeClass
+	@BeforeClass //Test Build Trigger
 	public void beforeClass() {
+		ExtentReports report = new ExtentReports("C:\\Users\\rahul\\Desktop\\ExtentReport.html");
+		test = report.startTest("Verify Welcome Test");
 		System.out.println("This method runs before class");
 	}
 	@BeforeMethod(alwaysRun = true)
