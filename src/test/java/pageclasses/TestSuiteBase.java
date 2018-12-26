@@ -18,7 +18,7 @@ public class TestSuiteBase {
 	protected WebDriver driver;
 	protected SearchPageFactory search;
 
-	@Parameters({ "platform","browser","version", "url" }) //Test Case
+	@Parameters({ "platform","browser","version", "url" }) //Test Cases
     @BeforeClass(alwaysRun=true)
     public void setup(String platform, String browser, String
       version, String url) throws MalformedURLException
